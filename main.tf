@@ -12,7 +12,7 @@ terraform {
     organization = "drbh"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "learn-terraform-github-actions"
     }
   }
 }
