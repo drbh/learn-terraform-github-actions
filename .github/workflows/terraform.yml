@@ -83,7 +83,8 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo version #--minify
+        working-directory: website
+        run: hugo --minify
 
       # - name: Deploy static site to S3 bucket
       #   run: aws s3 sync ./dist/ s3://<your-website-bucket> --delete
