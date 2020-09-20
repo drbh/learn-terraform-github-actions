@@ -51,6 +51,12 @@ data "aws_iam_policy_document" "s3_policy" {
   }
 }
 
+resource "aws_s3_bucket_policy" "example" {
+  bucket = aws_s3_bucket.b.id
+  policy = data.aws_iam_policy_document.s3_policy.json
+}
+
+
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = aws_s3_bucket.b.bucket_regional_domain_name
