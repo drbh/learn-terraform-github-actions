@@ -1,5 +1,5 @@
 title = "Researcher"
-baseURL = "https://example.com"
+baseURL = "https://d302cdh1k45w8e.cloudfront.net"
 theme = "researcher"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
 enableEmoji = true
