@@ -93,4 +93,5 @@ jobs:
         working-directory: website
         run: |
           ls
-          aws s3 sync ./public/ s3://gh-action-bucket-test
+          aws s3 sync public/ s3://gh-action-bucket-test
+          ls public
