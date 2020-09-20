@@ -84,8 +84,11 @@ jobs:
 
       - name: Build
         working-directory: website
-        run: hugo --minify
+        # run: hugo --minify
+        script: |
+          ls  
+          hugo 
 
       - name: Deploy static site to S3 bucket
         working-directory: website
-        run: aws s3 sync ./public/ s3://gh-action-bucket-test --delete
+        run: aws s3 sync ./public/ s3://gh-action-bucket-test
