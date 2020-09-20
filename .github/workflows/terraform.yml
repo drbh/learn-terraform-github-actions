@@ -83,6 +83,11 @@ jobs:
           # hugo-version: '0.74.3'
           # extended: true
 
+      - name: Submodule
+        run: |
+          git submodule init 
+          git submodule update
+
       - name: Build
         working-directory: website
         run: |
